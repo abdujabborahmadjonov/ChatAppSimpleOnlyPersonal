@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/delete_all"
+    android:title="@string/clear_all_data"
+    android:contentDescription="@string/clear"
+    android:icon="@drawable/baseline_auto_delete_24"/>
+
+</menu>

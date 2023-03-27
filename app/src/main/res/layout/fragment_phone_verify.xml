@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F9FAFF"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".fragments.PhoneVerifyFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|bottom">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="40dp"
+            android:src="@drawable/ic_verify" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingBottom="15dp"
+            android:text="Verify mobile"
+            android:textColor="#444444"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.chaos.view.PinView
+            android:id="@+id/id_otp"
+            style="@style/PinWidget.PinView"
+            app:hideLineWhenFilled="true"
+            app:itemCount="6"
+            app:itemRadius="5dp"
+            app:lineColor="#2196F3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:cursorVisible="true"
+            android:inputType="number"
+            android:itemBackground="#F4F6F9"
+            android:textColor="#1F1F1F" />
+
+        <Button
+            android:id="@+id/verifyBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:background="#6372FF"
+            android:text="Verify"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

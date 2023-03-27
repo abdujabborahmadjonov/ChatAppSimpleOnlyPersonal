@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#8DC6DF"
+    tools:context=".fragments.LoginForEmailAndPhonrFragment">
+    <ImageView
+        android:id="@+id/ivimage"
+        android:layout_width="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity = "center_horizontal"
+        android:src="@drawable/usertort"
+        android:layout_height="100dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/lay_numd"
+        android:layout_height="wrap_content"
+        app:errorIconDrawable="@drawable/ic_baseline_error_24"
+        app:helperTextTextColor="#FF0000"
+        app:startIconDrawable="@drawable/ic_person"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        android:layout_margin="15dp"
+        >
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:background="#9FE3EC"
+            android:layout_height="?actionBarSize"
+            android:gravity="bottom"
+            android:hint="Name"
+            android:autofillHints=""
+            tools:ignore="TextFields">
+
+        </EditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:focusableInTouchMode="true"
+        android:screenReaderFocusable="true"
+        android:contextClickable="true"
+        android:clickable="true"
+        android:background="#9FE3EC"
+        android:focusable="true"
+        android:fontFamily="@font/fontofprogramminglanguage"
+        android:padding="10dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:text="Save"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/coordinate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+
+</LinearLayout>

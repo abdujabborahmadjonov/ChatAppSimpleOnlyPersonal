@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/authMainFragment">
+
+    <fragment
+        android:id="@+id/authMainFragment"
+        android:name="dev.abdujabbor.chatappsimple.fragments.AuthMainFragment"
+        android:label="fragment_auth_main"
+        tools:layout="@layout/fragment_auth_main" >
+        <action
+            android:id="@+id/action_authMainFragment_to_phoneVerifyFragment"
+            app:destination="@id/phoneVerifyFragment" />
+        <action
+            android:id="@+id/action_authMainFragment_to_allUsersFragment"
+            app:destination="@id/allUsersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allUsersFragment"
+        android:name="dev.abdujabbor.chatappsimple.fragments.AllUsersFragment"
+        android:label="fragment_all_users"
+        tools:layout="@layout/fragment_all_users" >
+        <action
+            android:id="@+id/action_allUsersFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoneVerifyFragment"
+        android:name="dev.abdujabbor.chatappsimple.fragments.PhoneVerifyFragment"
+        android:label="fragment_phone_verify"
+        tools:layout="@layout/fragment_phone_verify" >
+        <action
+            android:id="@+id/action_phoneVerifyFragment_to_loginForEmailAndPhonrFragment"
+            app:destination="@id/loginForEmailAndPhonrFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginForEmailAndPhonrFragment"
+        android:name="dev.abdujabbor.chatappsimple.fragments.LoginForEmailAndPhonrFragment"
+        android:label="fragment_login_for_email_and_phonr"
+        tools:layout="@layout/fragment_login_for_email_and_phonr" >
+        <action
+            android:id="@+id/action_loginForEmailAndPhonrFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="dev.abdujabbor.chatappsimple.fragments.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+</navigation>

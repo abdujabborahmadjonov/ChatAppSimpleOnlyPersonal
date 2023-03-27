@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "244115419665",
+    "project_id": "koreanquran-84160",
+    "storage_bucket": "koreanquran-84160.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244115419665:android:fc563669c3ff7e230e37b0",
+        "android_client_info": {
+          "package_name": "dev.abdujabbor.chatappsimple"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244115419665-0llfs07eflldk2hu1b610s6l07vg3a0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR-Bhrayk0sl8GLiWeV4Yf_KpTJzGbOdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244115419665-0llfs07eflldk2hu1b610s6l07vg3a0b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

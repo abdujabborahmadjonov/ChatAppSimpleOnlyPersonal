@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AllUsersFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@android:style/Widget.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#647BFD"
+            android:saveEnabled="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_wrapBehaviorInParent="included"
+            app:menu="@menu/toolbar_menu_main"
+            app:navigationIcon="@drawable/baseline_menu_24"
+            app:title="Telegram"
+            app:titleCentered="true">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#5A70E8"
+            android:fadeScrollbars="true"
+            android:scrollbarSize="20sp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:listitem="@layout/item_rv_user" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:animateLayoutChanges="true"
+        android:animationCache="true"
+        android:background="#5A70E8"
+        android:fitsSystemWindows="true"
+        android:isScrollContainer="true"
+        android:keyboardNavigationCluster="true"
+        android:textDirection="rtl"
+        app:bottomInsetScrimEnabled="true"
+        app:dividerInsetEnd="60dp"
+        app:dividerInsetStart="20sp"
+        app:headerLayout="@layout/header_layout"
+        app:itemHorizontalPadding="15sp"
+        app:itemIconPadding="20dp"
+        app:itemIconSize="20sp"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#FFFFFF"
+        app:menu="@menu/navigationmenu"
+        app:subheaderInsetStart="@android:dimen/app_icon_size" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
